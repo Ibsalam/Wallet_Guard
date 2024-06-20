@@ -7,6 +7,7 @@ WalletGuard  web application  is financial management where users can track thei
 
 
 # Author ✒️
-Abdulgafar Ridwan <@gmail.com>
-Abdulazeez Buhari <abdulazeezbuhari27@gmail.com>
-Salami Ibrahim  <@gmail.com>
+
+* Abdulgafar Ridwan <@gmail.com>
+* Abdulazeez Buhari <abdulazeezbuhari27@gmail.com>
+* Salami Ibrahim  <@gmail.com>
