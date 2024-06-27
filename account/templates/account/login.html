@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md" id="login-form">
+	<h2 class="text-2xl font-bold mb-6 text-gray-800">Login</h2>
+	<form id="loginForm" method="POST">
+		{% csrf_token %}
+	    <div class="mb-4">
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="username">Username</label>
+		<input id="username" type="text" placeholder="Enter your username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="username" required>
+	    </div>
+	    <div class="mb-4">
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
+		<input id="password" type="password" placeholder="Enter your password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="password" required>
+	    </div>
+	    <div class="flex items-center justify-between">
+		<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Login</button>
+		<a class="inline-block align-baseline font-bold text-sm text-blue-600 hover:text-blue-800" href="#">Forgot Password?</a>                      
+	    </div>
+	</form>
+	<div class="mt-4 text-center">
+	    <p class="text-gray-700"> Don't have an account?</p>
+	    <a href="signup.html">
+		<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Sign up</button>
+	    </a>
+	    <p class="text-gray-700">Or</p>
+	    <a href="{% url 'account:dashboard' %}" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline inline-block mt-4">Continue as Guest</a>
+	</div>
+</div>
+{% endblock content %}
+{% block script %}
+	<script src="{% static 'js/login.js' %}" defer></script>	
+{% endblock script %}

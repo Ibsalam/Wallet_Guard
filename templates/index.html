@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="bg-white p-6 rounded-lg shadow-md flex flex-col md:flex-row md:w-3/4 mx-auto">
+    <div class="md:w-2/3 order-2 md:order-1">
+        <div class="text-center mb-6">
+            <h3 class="text-3xl font-bold mb-2">Welcome to WalletGuard</h3>
+            <p class="text-lg">At WalletGuard, we believe that managing your finances should be simple, efficient, and stress-free. Our platform offers powerful tools to help you:</p>
+        </div>
+        <ul class="list-disc list-inside text-left space-y-2">
+            <li><strong>Track Your Finances:</strong> Keep a detailed record of your income and expenses, ensuring you stay on top of your financial health.</li>
+            <li><strong>Manage Your Budget:</strong> Create and monitor budgets effortlessly to ensure you meet your financial goals.</li>
+            <li><strong>Monitor Your Investments:</strong> Stay updated on the performance of your investments and make informed decisions.</li>
+            <li><strong>Analyze Your Spending:</strong> Gain insights into your spending habits with comprehensive expense analysis.</li>
+        </ul>
+        <p class="text-lg mt-4">Whether you're an individual, a small business owner, a freelancer, or an investor, WalletGuard is designed to cater to your specific needs. We support multiple currencies and offer a customizable experience to suit various financial practices and systems.</p>
+        <p class="text-lg mt-4">Start your journey towards better financial management with WalletGuard today! No sign-up required. Simply get started and take control of your finances.</p>
+    </div>
+    <div class="md:w-2/3 flex items-center justify-center md:justify-end order-1 md:order-2">
+        <img src="{% static 'img/Walletguardpage1II.jpg' %}" alt="WalletGuard Introduction" class="rounded-lg shadow-md w-full h-auto">
+    </div>
+</section>
+
+<section class="text-center mt-10">
+    <h2 class="text-4xl font-bold mb-4">Secure Your Wallet with WalletGuard</h2>
+    <p class="text-lg mb-6 text-white">Protect your financial assets with our top-notch security solutions.</p>
+    <a href="login.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Get Started</a>
+</section>
+
+<section class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold mb-2">Easy Setup</h3>
+        <p>Get your wallet secured in just a few steps with our user-friendly interface.</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold mb-2">Advanced Encryption</h3>
+        <p>Our advanced encryption methods ensure that your data is always safe.</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold mb-2">24/7 Support</h3>
+        <p>We are here to help you at any time, day or night.</p>
+    </div>
+</section>
+{% endblock content %}
+
+{% block script %}
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock script %}
+
