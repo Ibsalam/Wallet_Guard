@@ -7,12 +7,12 @@
 	<form id="loginForm" method="POST">
 		{% csrf_token %}
 	    <div class="mb-4">
-		<label class="block text-gray-700 text-sm font-bold mb-2" for="username">Username</label>
-		<input id="username" type="text" placeholder="Enter your username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="username" required>
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+		<input id="username" type="text" placeholder="Enter your email address" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="email" required>
 	    </div>
 	    <div class="mb-4">
-		<label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
-		<input id="password" type="password" placeholder="Enter your password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="password" required>
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="password1">Password</label>
+		<input id="password" type="password" placeholder="Enter your password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="password1" required>
 	    </div>
 	    <div class="flex items-center justify-between">
 		<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Login</button>
@@ -21,7 +21,7 @@
 	</form>
 	<div class="mt-4 text-center">
 	    <p class="text-gray-700"> Don't have an account?</p>
-	    <a href="signup.html">
+	    <a href="{% url 'account:signup'  %}">
 		<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Sign up</button>
 	    </a>
 	    <p class="text-gray-700">Or</p>
