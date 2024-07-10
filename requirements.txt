@@ -1,5 +1,6 @@
 asgiref==3.8.1
 Django==5.0.6
+django-htmx==1.18.0
 greenlet==3.0.3
 msgpack==1.0.8
 neovim==0.3.1

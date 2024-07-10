@@ -1,0 +1,24 @@
+{% extends "form_base.html" %}
+{% load tailwind_filters %}
+
+{% block content %}
+<h1 class="mt-8 mb-4 text-3xl text-black">
+    Update Budget
+</h1>
+<form action="{% url 'wallet:update-budget' budget.pk %}" method='POST'>
+	{% csrf_token %}
+
+	{{ form|crispy }}
+
+
+    <button class="btn btn-success bg-green-200">
+        Add
+    </button>
+    <a class="btn btn-error" 
+       href="{% url 'wallet:budgets-list' %}">
+        Cancel
+    </a>
+</form>
+		
+{% endblock content %}
+
