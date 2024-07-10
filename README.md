@@ -1,7 +1,8 @@
 Portfolio project:
 
 #  WalletGuard
-*screenshot of wallet guard app*
+![Screenshot 2024-07-10 215635](https://github.com/Ibsalam/Wallet_Guard/assets/125444167/bc737a33-d5da-4b93-b985-9c7a0bcd92b2)
+
 
 [WalletGuard](https://github.com/Ibsalam/Wallet_Guard)  web application that is designed for financial management where users can track their income, expenses, and savings with the features to fit other finanacial need.to actieve this goals, wallet guard provide a financial track record for all spending .
 
@@ -50,9 +51,29 @@ To explore features without logging in, check out Features
 
 # Screenshots
 
+![Screenshot 2024-07-10 213247](https://github.com/Ibsalam/Wallet_Guard/assets/125444167/96c29859-102c-44b7-b798-2f3716e168cc)
+
+# Features
+![Screenshot 2024-07-10 213759](https://github.com/Ibsalam/Wallet_Guard/assets/125444167/3069e3a0-016a-40e9-81de-398e9545075c)
+
+# Financial overview
+![Screenshot 2024-07-10 213837](https://github.com/Ibsalam/Wallet_Guard/assets/125444167/72b94f7e-2e23-4be0-a77f-386ee31a8019)
+
+
+ # Built With
+Python - The Backend Language
+HTML/CSS/Javascript - The Frontend Language
+Flask - The Web Development Framework
+SQLAlchemy - Python SQL Toolkit and Object Relational Mapper
+MySQL - Relational Database Management System
+
+# Future
+At WalletGuard, we are committed to continuously improving our application to better serve our users. Here’s a glimpse of our future plans and upcoming features:
+
+Acknowledgements
+ALX AFIRCA School (Staff and Students)
 
 # Author ✒️
-
 * Abdulgafar Ridwan <@gmail.com>
 * Abdulazeez Buhari <abdulazeezbuhari27@gmail.com>
 * Salami Ibrahim  <@gmail.com>
